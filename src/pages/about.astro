@@ -1,13 +1,15 @@
-```astro
+
 ---
 import Layout from '../layouts/BlogPost.astro';
+import jibunImage from '../assets/jibun.jpg';
 ---
 
 <Layout
 	title="About Me（私について）"
 	description="このブログの筆者のプロフィールと、当ブログの目的について"
 	pubDate={new Date('2026-05-06')}
-	heroImage="../../assets/jibun.jpg"
+	heroImage={jibunImage}
+>
 >
 	<p>
 		はじめまして。当ブログにご訪問いただき、ありがとうございます。
