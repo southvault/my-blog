@@ -139,3 +139,24 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+/* ==================================================
+   スマホ（画面幅768px以下）の時の文字サイズ調整
+================================================== */
+@media (max-width: 768px) {
+  /* 記事のタイトル（一番大きな文字） */
+  h1 {
+    font-size: 1.5em !important;
+    line-height: 1.4;
+  }
+  
+  /* 記事の中の見出し（「今日のニュース」など） */
+  h2 {
+    font-size: 1.3em !important;
+  }
+  
+  /* 記事の小見出し */
+  h3 {
+    font-size: 1.1em !important;
+  }
+}
